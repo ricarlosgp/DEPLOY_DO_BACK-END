@@ -25,7 +25,7 @@ const { hash, compare } = require("bcryptjs"); //importando/require de dentro do
 
 const AppError = require("../utils/AppError"); //importando através do require o arquivo AppError.js de dentro da pasta utils e despejando na minha variável const AppError
 
-const UserRepository = require("../repositories/UserRepository");
+const UserRepository = require("../UserRepository.js/UserRepository");
 const sqliteConnection = require("../database/sqlite"); //importando através do require meu index.js onde consta o async function sqliteConnection e despejar em minha const sqliteConnection. Estou importando minha conexão com o banco de dados.
 const UserCreateService = require("../services/UserCreateService");
 
